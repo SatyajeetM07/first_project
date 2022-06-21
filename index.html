@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freak House</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    /* CSS Reset */
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background-image: url('img/bg1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+        font-family: 'Baloo Bhai 2', cursive;
+
+    }
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        display: inline-block;
+        position: absolute;
+        left: 60px;
+        text-align: center;
+        line-height: 0px;
+        font-size: 20px;
+
+    }
+
+    .mid {
+        display: block;
+
+        width: 40%;
+        margin: 20px auto;
+
+        /* border: 2px solid green; */
+    }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        /* border: 2px solid white; */
+
+    }
+
+    .navbar li {
+
+        display: inline-block;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 34px 23px;
+        font-size: 20px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        border: 2px solid green;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 10px 10px;
+        /* text-decoration: underline; */
+        color: rgb(139, 235, 115);
+
+    }
+
+    .left img {
+        width: 118px;
+        height: 70px;
+        filter: invert(100%);
+        object-fit: cover;
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai 2', cursive;
+        margin: 10px 10px;
+        color: white;
+        background-color: black;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(211, 111, 111);
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 169px 135px;
+        padding: 64px 61px;
+        width: 33%;
+        border-radius: 40px;
+    }
+
+    .form-group input {
+        font-family: 'Baloo Bhai 2', cursive;
+        font-size: 18px;
+        text-align: center;
+        display: block;
+        width: 80%;
+        padding: 3px;
+        border: 0px ;
+        border-radius: 10px;
+        margin: 10px auto;
+    }
+
+    .container h1 {
+        text-align: center;
+
+    }
+
+    .container button {
+        display: block;
+        width: 332px;
+        margin: 45px auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left bix for logo -->
+        <div class="left">
+            <img src="img/logo.png" alt="">
+            <div>Freak House</div>
+
+
+        </div>
+        <!-- mid box or navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">
+                Call us now
+            </button>
+            <button class="btn">
+                Email Us
+
+            </button>
+        </div>
+
+    </header>
+    <div class="container">
+        <h1>Join the crowd!</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter Your Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
